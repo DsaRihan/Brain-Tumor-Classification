@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Accuracy Overview</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+
+    header {
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .model-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .model {
+      flex: 0 0 48%;
+      background-color: #ecf0f1;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px 0;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .accuracy-bar {
+      background-color: #2ecc71;
+      height: 20px;
+      width: 0;
+      transition: width 1s ease-out;
+    }
+
+    .accuracy-text {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    @keyframes growWidth {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Model Accuracy Overview</h1>
+  </header>
+
+  <section>
+    <div class="model-container">
+      <div class="model" style="animation: growWidth 1s ease-out;">
+        <h2>Logistic Regression</h2>
+        <p>
+          Logistic Regression is a statistical method for analyzing datasets in which there are one or more independent
+          variables that can be used to predict the outcome of a categorical dependent variable.
+        </p>
+        <div class="accuracy-bar" style="width: 95.92%;"></div>
+        <p class="accuracy-text">Testing Score: 95.92%</p>
+      </div>
+
+      <div class="model" style="animation: growWidth 1s ease-out;">
+        <h2>Support Vector Machine (SVM)</h2>
+        <p>
+          Support Vector Machine is a supervised machine learning algorithm that can be used for classification or
+          regression challenges.
+        </p>
+        <div class="accuracy-bar" style="width: 96.73%;"></div>
+        <p class="accuracy-text">Testing Score: 96.73%</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>

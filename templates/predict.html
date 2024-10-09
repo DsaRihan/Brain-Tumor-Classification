@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/predict.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="navi"> BRAIN CANCER PREDICTION</nav>
+
+       
+        <div class="block">
+            <div class="butoncont">
+                <!-- <div class="dubmit">
+                    <button class="button" id="abc">
+                        <label for="myfile">Select a file:</label>
+                        <input type="file" id="myfile" name="myfile">
+                    </button>
+                    
+                </div> -->
+                <div class="dubmit">
+                    <form action="/upload" method="post" enctype="multipart/form-data">
+                        <button class="button" id="abc">    
+                            <input type="file" name="image" accept="image/*" >
+                        </button> 
+                        <div id="subtn"  >
+                            <button  class="btn-hover color-8" id="navigate">
+                                <div class="navigate1">
+                                    <input type="submit" value="upload" style="visibility: hidden;">
+                                    submit
+                                </div>
+                            </button>   
+                        </div>
+                        
+                    </form>
+                </div>
+                
+                
+            </div> 
+            <div class="wp">
+                <div class="brain">
+                </div>
+                <p class="text">Scanning.....</p>
+            </div>
+        </div>
+        
+    </div> 
+    <script>
+           document.getElementById('navigate').addEventListener('click', function() {
+            // Navigate to a new HTML file
+        window.location.href = '/result';
+    });
+        
+    </script>  
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Cancer Detection Project</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+    #graph-container {
+      width: 80%;
+      /* margin: 20px auto; */
+    }
+
+    .bar {
+      display: inline-block;
+      
+      width: 40px;
+      height: 150px;
+      margin-right: 10px;
+      background-color: #3498db;
+      animation: barAnimation 1s ease-out;
+    }
+
+    @keyframes barAnimation {
+      from {
+        height: 0;
+      }
+
+      to {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Brain Cancer Detection Project</h1>
+
+  <section id="content">
+    <p>
+      Brain cancer is a serious health concern worldwide. Our project focuses on the detection of brain tumors, specifically
+      glioma, meningioma, pituitary, and cases with no tumor.
+    </p>
+
+    <p>
+      For our training dataset, we have considered the pituitary and no tumor datasets. This choice is based on the prevalence
+      of pituitary tumors in our local region, such as India.
+    </p>
+  </section>
+
+  <section id="graph-container">
+    <h2>Data Distribution</h2>
+    <div class="bar" style="height: 120px;"></div><!-- Change the height based on your dataset -->
+    <div class="bar" style="height: 80px;"></div><!-- Change the height based on your dataset -->
+    <p>Cancer No Cancer</p>
+    
+  </section>
+
+  <section>
+    <p>The above graph represents the plot of the Training dataset ,the number of the data which are labelled
+        cancer are 827 ,and the data which are labelled as no cancer are 395
+    </p>
+  </section>
+
+</body>
+
+</html>
